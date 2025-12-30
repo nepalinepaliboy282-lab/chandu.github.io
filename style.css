@@ -1,0 +1,25 @@
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(120deg,#0f2027,#203a43,#2c5364);
+  color:white;
+  height:100vh;
+}
+
+.hero{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  height:100%;
+}
+
+button{
+  padding:12px 30px;
+  border:none;
+  background:#00f2ff;
+  color:black;
+  font-size:16px;
+  cursor:pointer;
+  border-radius:30px;
+}
