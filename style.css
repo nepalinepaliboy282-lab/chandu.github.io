@@ -1,25 +1,51 @@
 body{
   margin:0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(120deg,#0f2027,#203a43,#2c5364);
+  font-family:'Segoe UI',sans-serif;
+  background:black;
   color:white;
   height:100vh;
+  overflow:hidden;
 }
 
-.hero{
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  height:100%;
+.bg{
+  position:fixed;
+  inset:0;
+  background:radial-gradient(circle,#111 1px,transparent 1px);
+  background-size:30px 30px;
+  animation:move 25s linear infinite;
 }
 
-button{
-  padding:12px 30px;
-  border:none;
-  background:#00f2ff;
-  color:black;
-  font-size:16px;
-  cursor:pointer;
-  border-radius:30px;
+@keyframes move{
+  to{background-position:200px 200px;}
+}
+
+.card{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  text-align:center;
+}
+
+h1{
+  font-size:3rem;
+  text-shadow:0 0 20px white;
+}
+
+.location{
+  display:block;
+  margin:10px 0;
+  opacity:.8;
+}
+
+.social a{
+  color:white;
+  margin:15px;
+  font-size:24px;
+  transition:.3s;
+}
+
+.social a:hover{
+  color:#00f2ff;
+  transform:scale(1.3);
 }
